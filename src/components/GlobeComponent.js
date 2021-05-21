@@ -128,6 +128,8 @@ return <>
     ref={globeEl}
     globeImageUrl={"/images/earth-night.jpg"}
     backgroundImageUrl={"/images/night-sky.png"}
+    animateIn={true}
+    showAtmosphere={true}
     arcsData={arcs}
     arcStartLat={d => +d.startlat}
     arcStartLng={d => +d.startlng}
@@ -138,10 +140,11 @@ return <>
     arcLabel={d=>+d.label}
     arcDashInitialGap={() => Math.random()}
     arcDashAnimateTime={4000}
-    arcColor={() => "#9cff00"}
+    arcColor={() => "#1D8DF6"}
     arcsTransitionDuration={0}
+    arcStroke={1}
     pointsData={places.slice(0,20000)}
-    pointColor={() => "#FFFF00"}
+    pointColor={() => "#1D8DF6"}
     pointAltitude={0.01}
     pointLabel={"city"}
     pointRadius="size"
